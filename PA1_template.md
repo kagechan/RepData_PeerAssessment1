@@ -24,14 +24,17 @@ unzip('repdata-data-activity.zip')
 ```
 
 ## Loading and preprocessing the data
+
 1. Load the data with read.csv() function.
 2. Process/transform the data (if necessary).
+
 
 ```r
 csvdata <- read.csv(file='activity.csv', header=T, na.strings="NA")
 ```
 
 ## What is mean total number of steps taken per day?
+
 1. Calculate the total number of steps taken per day.
 
 * get the subset of the data which contains only steps and date.
@@ -172,7 +175,7 @@ The histgram described above indicates that its shape looks like a standard devi
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-1. Create a new factor variable in the dataset with two levels ??? gweekdayh and gweekendh indicating whether a given date is a weekday or weekend day.
+1. Create a new factor variable in the dataset with two levels ??? gweekdayh and gweekendh indicating whether a given date is a weekday or weekend day.
 
  * Use the dataset with the filled-in missing values for this part.
  * Use weekdays() function to get the day of the week.
